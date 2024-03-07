@@ -1,4 +1,7 @@
-package Esercizio;
+package Entities;
+
+import Interfaces.CheckIn;
+import Interfaces.CheckOut;
 
 public class Volontario implements CheckIn, CheckOut {
     private String nome;

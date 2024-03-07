@@ -1,4 +1,6 @@
-import Esercizio.*;
+import Entities.*;
+import Interfaces.CheckIn;
+import Interfaces.CheckOut;
 
 public class Main {
 //    AGGIUNGERE LE ORE FATTE DI OGNI DIPENDENTE/VOLONTARIO AL GIORNO : oreSvolteGiornaliere, AGGIUNGERE LA PAGA ORARIA PER TUTTI I DIPENDENTI
@@ -20,8 +22,10 @@ public class Main {
             somma +=  dipendenti[i].getStipendio();
 
         }
+        System.out.println("Somma : ");
         System.out.println("La somma degli stipendi è : " + somma);
-
+        System.out.println("----------------------------------------------------------");
+        System.out.println("CheckIn : ");
         Volontario volontario1 = new Volontario("Mario", 48, "volontario", "16:00","20:00");
         Volontario volontario2 = new Volontario("Marco", 37, "volontario", "13:00", "18:00");
         Volontario volontario3 = new Volontario("Antonio", 40, "volontario", "9:00", "13:00");
@@ -29,6 +33,8 @@ public class Main {
         for (int i = 0; i < check.length; i++) {
             check[i].checkIn();
         }
+        System.out.println("----------------------------------------------------------");
+        System.out.println("CheckOut : ");
         CheckOut[] checkOut = {dipendente1, dipendente2, dirigente, volontario1, volontario2, volontario3};
         for (int i = 0; i < checkOut.length; i++) {
             checkOut[i].checkOut();

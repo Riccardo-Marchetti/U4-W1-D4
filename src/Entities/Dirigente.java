@@ -1,4 +1,4 @@
-package Esercizio;
+package Entities;
 
 public class Dirigente extends Dipendente{
 

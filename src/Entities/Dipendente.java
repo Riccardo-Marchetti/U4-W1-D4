@@ -1,4 +1,7 @@
-package Esercizio;
+package Entities;
+
+import Interfaces.CheckIn;
+import Interfaces.CheckOut;
 
 public abstract class Dipendente implements CheckIn, CheckOut {
     public enum Dipartimento {PRODUZIONE, AMMINISTRAZIONE, VENDITE};
