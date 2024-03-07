@@ -1,5 +1,5 @@
 package Esercizio;
 
-public interface Check {
+public interface CheckIn {
     public void checkIn();
 }

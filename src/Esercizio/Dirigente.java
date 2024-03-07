@@ -3,8 +3,8 @@ package Esercizio;
 public class Dirigente extends Dipendente{
 
 
-    public Dirigente(String matricola, double stipendio, double inizioTurno, Dipartimento dipartimento) {
-        super(matricola, stipendio, inizioTurno, dipartimento);
+    public Dirigente(String matricola, double stipendio, String inizioTurno, String fineTurno, Dipartimento dipartimento) {
+        super(matricola, stipendio, inizioTurno,fineTurno, dipartimento);
     }
 
     @Override
@@ -14,6 +14,11 @@ public class Dirigente extends Dipendente{
 
     @Override
     public void checkIn() {
-        System.out.println("Orario inizio turno : " + getInizioTurno() );
+        System.out.println("Orario di inizio turno dirigente : " + getInizioTurno() );
+    }
+
+    @Override
+    public void checkOut() {
+        System.out.println("Orario di fine turno dirigente : " + getFineTurno() );
     }
 }

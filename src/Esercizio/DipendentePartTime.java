@@ -4,8 +4,8 @@ public class DipendentePartTime extends Dipendente{
 
 private int ore;
 
-    public DipendentePartTime(String matricola, double stipendio, double inizioTurno, Dipartimento dipartimento, int ore) {
-        super(matricola, stipendio, inizioTurno, dipartimento);
+    public DipendentePartTime(String matricola, double stipendio, String inizioTurno, String fineTurno, Dipartimento dipartimento, int ore) {
+        super(matricola, stipendio, inizioTurno, fineTurno, dipartimento);
     }
 
 
@@ -20,7 +20,12 @@ private int ore;
 
     @Override
     public void checkIn() {
-        System.out.println("Orario inizio turno : " + getInizioTurno() );
+        System.out.println("Orario di inizio turno dipendente part time : " + getInizioTurno() );
+    }
+
+    @Override
+    public void checkOut() {
+        System.out.println("Orario di fine turno dirigente : " + getFineTurno() );
     }
 }
 
